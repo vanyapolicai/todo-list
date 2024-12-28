@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.task-count {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.task-input {
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.task-input input {
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-right: none;
+}
+
+.task-input button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.task-input button:hover {
+    background-color: #45a049;
+}
+
+.task-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.task-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.task-item .completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+.task-item button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    font-size: 14px;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.task-item .edit-btn {
+    background-color: #2196F3;
+}
+
+.task-item .edit-btn:hover {
+    background-color: #0b7dda;
+}
+
+.task-item .delete-btn {
+    background-color: #f44336;
+}
+
+.task-item .delete-btn:hover {
+    background-color: #da190b;
+}
+
+.task-filters {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.task-filters button {
+    margin: 0 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+}
+
+.task-filters button.active {
+    background-color: #4CAF50;
+    color: white;
+}
